@@ -1,7 +1,7 @@
 # coms309_codeReference
 Hey, if you're taking coms309 in Fall 2021, you might've come here for code reference. Email me at saltaf@iastate.edu if you have any questions about the code
 
-If you're scratching your head wondering where to start from here's my opinion:
+# If you're scratching your head wondering where to start from here's my suggested sequence of how to go about it:
 
 
 Here's the link for the channel where you'll find all the videos: https://www.youtube.com/channel/UCtr5RNPZNpw9tgj3Dxp5sNQ
