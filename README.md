@@ -9,7 +9,7 @@ Here's the link for the channel where you'll find all the videos: https://www.yo
 # NOTE: To maximize learning, install the android studio beforehand and work alongside the videos and write the code yourselves
 
 
-#or those just getting started start with these two
+For those just getting started start with these two
  - 1 - Android Studio Basics part 1
  - 2 - Android Studio Basics part 2
 
