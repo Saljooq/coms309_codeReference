@@ -10,9 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.util.List;
-
-import test.connect.myapplication.api.slimCallback;
+import test.connect.myapplication.api.SlimCallback;
 import test.connect.myapplication.model.Photo;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
         Button photoButton = findViewById(R.id.activity_main_button_for_photo);
         EditText photoNumInput = findViewById(R.id.activity_main_photoNum_input);
 
-//        GetPhotoApi().getFirstPhoto().enqueue(new slimCallback<Photo>(responsePhoto -> {
+//        GetPhotoApi().getFirstPhoto().enqueue(new SlimCallback<Photo>(responsePhoto -> {
 //            apiText1.setText(responsePhoto.printable());
 //        }));
 
-//        GetPhotoApi().getAllPhoto().enqueue(new slimCallback<List<Photo>>(photos->{
+//        GetPhotoApi().getAllPhoto().enqueue(new SlimCallback<List<Photo>>(photos->{
 //            apiText1.setText("");
 //            for (int i = 0; i < photos.size(); i++){
 //                apiText1.append(photos.get(i).printable());
@@ -44,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         photoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                GetPhotoApi().getPhotoByNum(photoNumInput.getText().toString()).enqueue(new slimCallback<Photo>(photo ->{
+                GetPhotoApi().getPhotoByNum(photoNumInput.getText().toString()).enqueue(new SlimCallback<Photo>(photo ->{
                     apiText1.setText(photo.printable());
                 }));
             }

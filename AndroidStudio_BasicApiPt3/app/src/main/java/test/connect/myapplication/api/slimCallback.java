@@ -6,19 +6,19 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class slimCallback<T> implements Callback<T> {
+public class SlimCallback<T> implements Callback<T> {
 
-    lambdainterface<T> lambdaInterface;
+    LambdaInterface<T> lambdaInterface;
 
     String logTag;
 
 
 
-    public slimCallback(lambdainterface<T> lambdaInterface){
+    public SlimCallback(LambdaInterface<T> lambdaInterface){
         this.lambdaInterface = lambdaInterface;
     }
 
-    public slimCallback(lambdainterface<T> lambdaInterface, String customTag){
+    public SlimCallback(LambdaInterface<T> lambdaInterface, String customTag){
         this.lambdaInterface = lambdaInterface;
         this.logTag = customTag;
     }
