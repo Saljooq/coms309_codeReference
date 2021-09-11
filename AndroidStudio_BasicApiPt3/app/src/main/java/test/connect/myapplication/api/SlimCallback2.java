@@ -6,20 +6,20 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class SlimCallback<T> implements Callback<T> {
+public class SlimCallback2<T> implements Callback<T> {
 
-    LambdaInterface<T> lambdaInterface;
+    LambdaInterface2<T> lambdaInterface2;
 
     String logTag;
 
 
 
-    public SlimCallback(LambdaInterface<T> lambdaInterface){
-        this.lambdaInterface = lambdaInterface;
+    public SlimCallback2(LambdaInterface2<T> lambdaInterface2){
+        this.lambdaInterface2 = lambdaInterface2;
     }
 
-    public SlimCallback(LambdaInterface<T> lambdaInterface, String customTag){
-        this.lambdaInterface = lambdaInterface;
+    public SlimCallback2(LambdaInterface2<T> lambdaInterface2, String customTag){
+        this.lambdaInterface2 = lambdaInterface2;
         this.logTag = customTag;
     }
 
@@ -29,7 +29,7 @@ public class SlimCallback<T> implements Callback<T> {
     public void onResponse(Call<T> call, Response<T> response) {
 
         if (response.isSuccessful()){
-            lambdaInterface.doSomething(response.body());
+            lambdaInterface2.doSomething(response.body());
         }
         else{
             Log.d(logTag, "Code:  "+response.code() + "    Msg:  "+response.message());
