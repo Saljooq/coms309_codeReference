@@ -24,7 +24,7 @@ public class TriviaController {
     Trivia PostTriviaByPath(@PathVariable String q, @PathVariable String a){
         Trivia newTrivia = new Trivia();
         newTrivia.setQuestion(q);
-        newTrivia.setAnswer(q);
+        newTrivia.setAnswer(a);
         triviaRepository.save(newTrivia);
         return newTrivia;
     }
