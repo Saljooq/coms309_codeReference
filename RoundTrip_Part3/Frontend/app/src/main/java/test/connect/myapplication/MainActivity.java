@@ -9,6 +9,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -35,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
         Button postByBodyBtn = findViewById(R.id.activity_main_post_by_body_button);
         EditText questionIn = findViewById(R.id.activity_main_question_editText);
         EditText answerIn = findViewById(R.id.activity_main_answer_editText);
-
+        ImageView im = new ImageView();
+        im.setImageBitmap();
 
         RegenerateAllTriviasOnScreen(apiText1);
 
